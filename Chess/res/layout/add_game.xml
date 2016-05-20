@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!--  Title bar -->
+    <TextView  
+        android:layout_width="match_parent" 
+        android:layout_height="30dp" 
+        android:text="@string/add_game"
+        android:gravity="center"
+        android:background="@color/MyDarkGreen"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+    />
+    
+    <!--  Form for adding -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:padding="20dp"
+        >
+        
+        <!--  Song name label -->
+        <TextView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/add_game_name_label"
+            android:textColor="@color/MyDarkGreen"
+            android:paddingBottom="2dp"/>
+        
+        <!-- Song name field -->
+        <EditText
+            android:id="@+id/game_name"
+            android:layout_width="match_parent"
+            android:background="@android:drawable/editbox_background"
+            android:layout_height="wrap_content"
+        />
+        
+        
+        
+        <!--  Buttons for save and cancel -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp">
+    
+            <Button style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/song_save"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/MyDarkGreen"
+                android:text="@string/lbl_save"
+                android:textSize="16sp"
+                android:textColor="@color/White"
+                android:onClick="save2"
+                 />
+            
+            <Button style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/song_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@color/MyDarkGreen"
+                android:text="@string/lbl_cancel"
+                android:textSize="16sp"
+                android:textColor="@color/White"
+                android:onClick="cancel"
+                 />
+                
+        </LinearLayout>
+        
+    </LinearLayout>   
+    
+</LinearLayout>

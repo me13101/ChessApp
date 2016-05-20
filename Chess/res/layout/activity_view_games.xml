@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Layout for game list -->
+
+    <ListView
+        android:id="@+id/game_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/MyGreen"
+        android:dividerHeight="1dp"
+        android:orientation="vertical" 
+         android:layout_weight="1"/>
+
+    
+  <Button android:id="@+id/btn_menu" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"/>
+</LinearLayout>

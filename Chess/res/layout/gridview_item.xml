@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/square"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+ android:background="?android:attr/activatedBackgroundIndicator"
+   >
+  
+    <com.example.chess.SquareImageView
+        android:id="@+id/picture"
+          android:layout_width="wrap_content"
+
+      android:layout_height="75dip"
+
+      android:padding="0dip"
+
+      android:layout_margin="0dip"
+
+        android:scaleType="centerCrop"
+         android:background="?android:attr/activatedBackgroundIndicator"
+       />
+    
+    
+    
+    
+</FrameLayout>
